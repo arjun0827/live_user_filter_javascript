@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+}
+
+.container{
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+header{
+    background-color: rgb(69, 69, 230);
+    padding: 20px 20px;
+    color: white;
+}
+
+.sub-title{
+    font-size: 12px;
+}
+
+input{
+    width: 250px;
+    height: 30px;
+    margin: 15px 0px;
+    padding: 10px;
+    background-color: rgb(73, 65, 65);
+    border-radius: 50px;
+    border: none;
+    color: white;
+}
+
+input:focus{
+    outline: none;
+}
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 100px;
+
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(221, 213, 213); 
+    border-radius: 100px;
+
+  }
+
+.user-list{
+    max-height: 340px;
+    overflow-y: auto;
+}
+
+.user-list li{
+    display: flex;
+    align-items: center;
+    
+}
+
+.user-list li.hide{
+display: none;
+}
+
+.user-list li:not(:last-child){
+    border-bottom: 1px solid black;
+}
+
+.user-list  img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+
+.hide{
+    display: none;
+}
